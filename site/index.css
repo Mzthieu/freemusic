@@ -1,0 +1,142 @@
+.container {display: flex;}
+
+section {
+    margin: 15px;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    background-color: #201e1e;
+    border-radius: 5px;
+}
+
+.imgBox {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-bottom: 0;
+}
+
+.mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 20%, #201e1e 80%);
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.imgBox img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    bottom: 0;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+
+.pre-controls {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    top: 0;
+    background-color: #201e1e;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+section i {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 5px;;
+}
+
+body main {
+    width: 80% !important;
+    border: 3px solid black;
+    margin: 15px;
+}
+
+header {
+    height: 60px;
+    border: 3px solid black;
+    margin: 15px;
+}
+
+footer {
+    display: flex;
+    height: 4vw;
+    padding: 12px;
+    background-color: #201e1e;
+    color: white;
+    margin: 15px;
+    width: 97%;
+}
+
+footer img {
+    border-radius: 4px;
+    height: 100%;
+    width: auto;
+    margin-right: 20px;
+}
+
+button {
+    border: none;
+    background-color: #201e1e;
+    color: white;
+}
+
+button:hover {cursor: pointer;}
+
+footer article {
+    background-color: #201e1e;
+    color: white;
+}
+
+.align {display: inline-block;}
+
+.controls {
+    position: relative;
+    justify-content: center;
+    background-color: #201e1e;
+    color: white;
+    width: 26vw;
+    left: 30%;
+}
+
+.first-floor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.first-floor button {
+    font-size: 1.25em;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.second-floor {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+input[type="range"] {width: 19vw;}
+
+.second-floor p {margin: 10px;}

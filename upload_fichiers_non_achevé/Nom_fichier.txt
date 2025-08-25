@@ -1,0 +1,7 @@
+	Nom fichier :
+
+nm = numéro d'id rapport à la playlist d'où il sort (exemple : titre n°01)
+nml = numéro du fichier de licence (et donc celui de la playlist)
+art = nom de l'artiste
+tit = titre du morceau
+==> nm-nml-art-tit.mp3
