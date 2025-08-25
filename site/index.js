@@ -17,7 +17,7 @@ function readable(seconds) {
     }
     const message = minuts.toString() + ':' + sec;
     return message;
-}
+}  // le audio.duration est en secondes, cette fonction le converti au format minutes:secondes
 total_time.textContent = readable(audio.duration);
 
 play.addEventListener('click', () => {
@@ -29,17 +29,17 @@ play.addEventListener('click', () => {
         play.className = 'fi-xnsuxl-play-solid';
     }
     window.friconix_update();
-});
+});  // lance ou met sur pause l'audio et change la class du bouton play/pause
 
 audio.addEventListener('timeupdate', () => {
     seek.value = (audio.currentTime / audio.duration) * 1000;
     current_time.textContent = readable(parseInt(audio.currentTime));
     total_time.textContent = readable(audio.duration);
-});
+});  // met à jour le temps en continu
 
 seek.addEventListener('input', () => {
     audio.currentTime = (seek.value / 1000) * audio.duration;
-});
+});   // met à jour le temps lorsque l'user utilise la barre de temps ( input type="range" )
 
 heart.addEventListener('click', () => {
     if (heart.className === 'fi-xnluxl-heart') {
@@ -48,4 +48,4 @@ heart.addEventListener('click', () => {
         heart.className = 'fi-xnluxl-heart';
     }
     window.friconix_update();
-})
+})  // change la class du coeur s'il est cliqué
