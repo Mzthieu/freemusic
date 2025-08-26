@@ -17,7 +17,7 @@ function readable(seconds) {
     }
     const message = minuts.toString() + ':' + sec;
     return message;
-}  // le audio.duration est en secondes, cette fonction le converti au format minutes:secondes
+};  // le audio.duration est en secondes, cette fonction le converti au format minutes:secondes
 total_time.textContent = readable(audio.duration);
 
 play.addEventListener('click', () => {
