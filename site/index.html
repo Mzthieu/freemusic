@@ -44,47 +44,6 @@
                 </div>
             </div>
         </footer>
-
-        <form method="post"><input name="ad_bdd" type="submit" value="Ajouter les infos à la base de données."></form>
-        <?php
-            if(isset($_POST['ad_bdd'])){
-                $fichier = "/home/mathieu/Documents/FreeMusic/infos_bdd.csv";
-                if(!file_exists($fichier)){
-                    die("Le fichier n'a pas été trouvé");
-                }  // vérifie que le fichier existe bien
-                
-                $contenu = fopen($fichier, 'r');
-                if($contenu === false){
-                    die("Le fichier n'a pas pu être ouvert");
-                } // ouvre le fichier
-
-                $result = [];
-                $entetes_deja = false;
-                while (($data = fgetcsv($contenu, 0, ',')) !== false) {
-                    if($entetes_deja === false){
-                        $entetes = $data;
-                        if ($entetes && isset($entetes[0])) {
-                            $entetes[0] = preg_replace('/^\xEF\xBB\xBF/', '', $entetes[0]);
-                        } // lit les entêtes et les stocke dans un tableau
-                        print_r($entetes);
-                        $entetes_deja = true;
-                    }
-                    $ligne = [];
-                    for($i=0; $i<count($data); $i++){
-                        $ligne[$entetes[$i]] = $data[$i];
-                    };
-                    $result[] = $ligne;
-                };
-
-                try{
-                    $connexion = new PDO('mysql:host=sql200.infinityfree.com;dbname=if0_39647451_freemusic', 'if0_39647451', 'wi5xPROJgalere');
-                    $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                }catch(PDOException $e){
-                    echo 'Il y a eu un problème lors de la connexion à la base de données : ' . $e->getMessage();
-                }
-            }
-        ?>
-
         <script src="index.js"></script>
     </body>
 </html>
