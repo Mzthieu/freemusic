@@ -142,12 +142,14 @@ footer article {
 input[type="range"] {width: 19vw;}
 
 .second-floor p {margin: 10px;}
-body{
+
+body {
     background: linear-gradient(#E812CC,#4800F0);
     background-size: cover;
     background-attachment: fixed;
 }
-#image{
+
+image{
     font-family:"Vend Sans", sans-serif;
     color:white;
 }
