@@ -1,64 +1,21 @@
+<!-- Page sur laquelle sera l'animation du logo, le 'se connecter', le 's'inscrire' et le 'utiliser sans compte' -->
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-        <script defer src="https://friconix.com/cdn/friconix.js"></script> 
-        <title>MUSIC</title>
+        <title>FREEMUSIC - Connexion</title>
     </head>
     <body>
-        <div id="image" class="image">
-            <div style="display:inline-block;vertical-align:top;">
-
-                <a href="index.html"><img src="images/M.png" alt="m en majuscule" width="80px"/></a>
-            </div>
-            <div style="display:inline-block;">
-                <h1>usic</h1>
-            </div>
-            <div id="option">
-                <a style="margin-right:100px;" href="Suggestion.html" id="un">Commentaire</a>
-                <a style="margin-right:100px;" href="Contact.html" id="deux">Contact</a>
-                <a href="Histoire.html" id="trois">Histoire</a>
-            </div>
-        </div>
-    
-        <div class="container">
-            <main style="width: 70%;">
-                <h3>Ici on peut mettre un résumé de la carrière/histoire des artistes. Genre pour Oscar Avilla: c'est un artiste surrêment indépendent et inconnu des services de police</h3>
-            </main>
-            <section>
-                <div class="imgBox">
-                    <img src="images/piano.avif">
-                    <div class="mask"></div>
-                </div>
-                <div class="pre-controls">
-                    <pre style="margin-left: 10px;font-size: 1.1em;;"><strong>I_taca</strong> • Oscar Avila</pre>
-                    <button><i id="heart" class="fi-xnluxl-heart"></i></button>
-                </div>
-            </section>
-        </div>
-        <footer>
-            <img src="images/piano.avif">
-            <article>
-                <div class="title align">
-                    <p><strong>I_taca</strong><br>Oscar Avila</p>
-                </div>
-                <audio id="audio" class="align">
-                    <source src="music/titres/001-1-Oscar Avila-I_taca.mp3" type="audio/mpeg">
-                </audio>
-            </article>
-            <div class="controls align">
-                <div class="first-floor">
-                    <button><i id="backward" class="fi-xnsdxl-forward-solid"></i></button>
-                    <button><i id="play" class="fi-xnsuxl-play-solid"></i></button>
-                    <button><i id="forward" class="fi-xnsuxl-forward-solid"></i></button>
-                </div>
-                <div class="second-floor">
-                    <p id="current-time">0:00</p><input id="seek" style="margin-top: 0.5vw;" type="range" value="0" min="0" max="1000"><p id="total-time"></p>
-                </div>
-            </div>
-        </footer>
-        <script src="index.js"></script>
+        <section>
+            <h2>Se connecter</h2>
+            <label>Votre identifiant : <input type="text"></label>
+            <label>Votre mot de passe : <input type="password"></label>
+            <button>Se connecter</button>
+            <a href="inscription.html">S'inscrire</a>
+        </section>
+        <section>
+            <a href="accueil.html">Utiliser FreeMusic sans compte</a>
+        </section>
     </body>
 </html>
