@@ -9,9 +9,6 @@ body{
 .all{
     text-align: center;
 }
-footer{
-    text-align:center;
-}
 .name{
    margin-top:15vh;
 }
@@ -40,6 +37,7 @@ input{
     font-family:"Montserrat", sans-serif;
     font-size:20px;
     background-color:#303636;
+    color: white;
 }
 button{
     border:solid,1px,grey;
@@ -71,7 +69,30 @@ button{
 }
 #Signup:hover{
     color:white;
+    box-shadow: white 0px 7px 29px 0px;
 }
 #Home:hover{
     color:white;
+    box-shadow: white 0px 7px 29px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+#Home, #Signup {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    height: 30px;
+    width: 250px;
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+    transition: box-shadow 1s;
 }
