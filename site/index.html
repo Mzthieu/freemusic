@@ -4,18 +4,40 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script defer src="index.js"></script>
         <title>FREEMUSIC - Connexion</title>
     </head>
     <body>
-        <section>
-            <h2>Se connecter</h2>
-            <label>Votre identifiant : <input type="text"></label>
-            <label>Votre mot de passe : <input type="password"></label>
-            <button>Se connecter</button>
-            <a href="inscription.html">S'inscrire</a>
-        </section>
-        <section>
-            <a href="accueil.html">Utiliser FreeMusic sans compte</a>
+        <a href="index.html"><img src="images/logo.png" alt="Logo" width="180"/></a>
+        <section class="all">
+            <h2 class="name">Connexion</h2>
+            <section class="content">
+                <div class="Identifiant" id="Identifiant">
+                    <input type="text" placeholder=" Identifiant">
+                    <br>
+                    <p id="un"></p>
+                </div>
+                <div class="password" id="password">
+                    <input type="password" placeholder=" Mots de passe">
+                    <br>
+                    <p id="deux"></p>
+                </div>
+                <div class="Login">
+                    <button id="Seconnecter"><b>Se connecter</b></button>
+                </div>
+            </section>
         </section>
     </body>
+     <footer>
+        <section class="allfoot">
+            <section id="Signup">
+                <a href="inscription.html">S'inscrire</a>
+            </section>
+            <section id="Home">
+                <a href="accueil.html">Utiliser FreeMusic sans compte</a>
+            </section>
+        </section>
+        </footer>
 </html>
