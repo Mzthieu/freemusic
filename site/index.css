@@ -49,6 +49,14 @@ button{
     color:black;
     background-color:white;
 }
+#Seconnecter:active{
+    background-color:black;
+    color:white;
+}
+#Seconnecter:hover{
+    background-color:black;
+    color:white;
+}
 #Signup:link{
     color:grey;
 }
