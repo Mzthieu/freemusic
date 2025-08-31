@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(#E812CC,#4800F0);
+    background-size: cover;
+    background-attachment: fixed;
+    font-weight: 500;
+}
+
+main {
+    border-radius: 20px;
+    color: white;
+    background-color: #201e1e;
+    border: 1px solid black;
+    padding: 2vw;
+    width: 30vw;
+    height: auto;
+    margin: auto;
+    font-size: 1em;
+}
+
+input {
+    width: 65%;
+    height: 1.5vw;
+    border-radius: 2px;
+    border: 1px solid white;
+    background-color: #201e1e;
+    color: white;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+hr {
+    height: 1px;
+    color: white;  /* Je ne sais pas lequel de ces attributs s'applique pour la couleur d'un <hr> */
+    background-color: white;
+    width: 80%;
+    margin-top: 20px;
+}
+
+header {
+    padding: 0;
+    display: flex;
+    font-family:"Vend Sans", sans-serif;
+    height: auto;
+}
+
+.valider {
+    height: 3.5em;
+    width: 40%;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    background-color: #4d4646;
+    font-size: 1.3em;
+    transition: box-shadow 1s;
+}
+
+.valider:hover {
+    box-shadow: rgba(210, 210, 218, 0.856) 0px 7px 29px 0px;
+}
+
+button {
+    height: 1.8vw;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 1.8vw;
+    background-color: #201e1e;
+    color: white;
+}
+
+.msg_err_add {
+    background-color: rgb(148, 14, 14);
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
