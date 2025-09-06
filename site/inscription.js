@@ -93,6 +93,7 @@ valider.addEventListener('click', async (e) => {
         const message = "⚠️ Il y a eu un problème lors de la création du compte :" + JSON.stringify(error);
         console.error("Supabase erreur : ", error);
         alert(message);
+        window.location.href = "http://localhost:3000/";
     } else {
         alert("Votre compte a été crée avec succès !");
         window.location.href = "http://localhost:3000/";
