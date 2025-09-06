@@ -10,28 +10,30 @@
     <body>
         <header><a href="index.html"><img src="images/logo.png"></a></header>
         <main>
-            <h1>Inscription à FreeMusic</h1>
-            <hr>
-            <label for="id_connexion">Définissez votre identifiant de connexion :</label><br>
-            <input id="id_connexion" type="text" placeholder="Albert-Durand95" required><br>
+            <form method="post">
+                <h1>Inscription à FreeMusic</h1>
+                <hr>
+                <label for="id_connexion">Définissez votre identifiant de connexion :</label><br>
+                <input id="id_connexion" type="text" placeholder="Albert-Durand95" required><br>
 
-            <label for="nom">Choisissez votre nom d'utilisateur :</label><br>
-            <input id="nom" type="text" placeholder="Bebert" required><br>
+                <label for="nom">Choisissez votre nom d'utilisateur :</label><br>
+                <input id="nom" type="text" placeholder="Bebert" required><br>
 
-            <label for="email">Entrez votre adresse e-mail (facultatif) <span style="color:red;">*</span></label><br>
-            <input type="email" placeholder="albert.durand@gmail.com" id="email"><br>
+                <label for="email">Entrez votre adresse e-mail (facultatif) <span style="color:red;">*</span></label><br>
+                <input type="email" placeholder="albert.durand@gmail.com" id="email"><br>
 
-            <label for="mdp">Déterminez votre mot de passe (8 caractères minimum) :</label><br>
-            <input id="mdp" type="password" minlength="8" placeholder="Mon-superMOTd€_passe" required><button type="button"><i id="eye" class="fi-xnpuxl-eye-solid"></i></button><br>
+                <label for="mdp">Déterminez votre mot de passe (8 caractères minimum) :</label><br>
+                <input id="mdp" type="password" minlength="8" placeholder="Mon-superMOTd€_passe" required><button type="button"><i id="eye" class="fi-xnpuxl-eye-solid"></i></button><br>
 
-            <label for="confirm">Confirmez votre mot de passe :</label><br>
-            <input type="password" placeholder="Mon-superMOTd€_passe" id="confirm"><button type="button"><i id="eye_confirm" class="fi-xnpuxl-eye-solid"></i></button><br>
+                <label for="confirm">Confirmez votre mot de passe :</label><br>
+                <input type="password" placeholder="Mon-superMOTd€_passe" id="confirm"><button type="button"><i id="eye_confirm" class="fi-xnpuxl-eye-solid"></i></button><br>
 
-            <div id="msg_err"></div>
+                <div id="msg_err"></div>
 
-            <div style="text-align: center; width: 100%;"><button type="submit" class="valider" id="valider">Créer mon compte !</button></div>
+                <div style="text-align: center; width: 100%;"><button type="submit" class="valider" id="valider">Créer mon compte !</button></div>
 
-            <p><span style="color:red;">*</span> Si le champ "email" est vide, vous ne pourrez utiliser l'option "J'ai oublié mon de passe", donc assurez-vous de le conserver quelque part.</p>
+                <p><span style="color:red;">*</span> Si le champ "email" est vide, vous ne pourrez utiliser l'option "J'ai oublié mon de passe", donc assurez-vous de le conserver quelque part.</p>
+            </form>
         </main>
         <script type="module" src="inscription.js"></script>
     </body>
